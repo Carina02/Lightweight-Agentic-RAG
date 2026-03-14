@@ -76,18 +76,18 @@ Response:
 POST `/slack/interactions`
 Endpoint configured in the Slack App dashboard to receive Interactive Button callbacks. It extracts the `thread_id` and the human decision `(Approve/Reject)` to resume the suspended LangGraph state.
 
-⚠️ Slack App Configuration Guide
+**3. Slack App Configuration Guide
 To enable the Human-in-the-Loop functionality, your Slack App must be configured correctly:
 
-**1. Go to Slack API Dashboard -> Your App.
+1. Go to Slack API Dashboard -> Your App.
 
-**2. Under OAuth & Permissions, add the `chat:write` scope. Install the app to your workspace and copy the Bot User OAuth Token `(xoxb-...)`.
+2. Under OAuth & Permissions, add the `chat:write` scope. Install the app to your workspace and copy the Bot User OAuth Token `(xoxb-...)`.
 
-**3. Under Interactivity & Shortcuts, toggle Interactivity to On.
+3. Under Interactivity & Shortcuts, toggle Interactivity to On.
 
-**4. Set the Request URL to your server's public endpoint: `https://<your-domain-or-ngrok>/slack/interactions`.
+4. Set the Request URL to your server's public endpoint: `https://<your-domain-or-ngrok>/slack/interactions`.
 
-**5. Invite the bot to your target channel: `/invite @YourBotName`.
+5. Invite the bot to your target channel: `/invite @YourBotName`.
 
 ## 📄 License
 MIT License
