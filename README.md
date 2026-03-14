@@ -51,7 +51,7 @@ Note: For local testing with Slack webhooks, use `ngrok` to expose your local po
 ngrok http 8000
 ```
 ## 🔗 API Endpoints
-**1. Start Workflow
+**1. Start Workflow**
 POST `/api/ask`
 Triggers the Agentic RAG background task.
 
@@ -72,11 +72,14 @@ Response:
 
 
 
-**2. Slack Interaction Webhook
+**2. Slack Interaction Webhook**
+
 POST `/slack/interactions`
+
 Endpoint configured in the Slack App dashboard to receive Interactive Button callbacks. It extracts the `thread_id` and the human decision `(Approve/Reject)` to resume the suspended LangGraph state.
 
-**3. Slack App Configuration Guide
+**3. Slack App Configuration Guide**
+
 To enable the Human-in-the-Loop functionality, your Slack App must be configured correctly:
 
 1. Go to Slack API Dashboard -> Your App.
