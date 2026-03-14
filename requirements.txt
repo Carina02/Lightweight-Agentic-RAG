@@ -1,0 +1,23 @@
+# ==========================================
+# Agentic RAG HITL Workflow Dependencies
+# ==========================================
+
+# 1. 核心编排与大语言模型集成 (Core Orchestration & LLMs)
+langgraph=0.3.11
+langchain=0.3.0
+langchain-openai=0.3.0
+
+# 2. API 网关与服务运行 (API Gateway & Server)
+fastapi=0.135.1
+uvicorn=0.30.0
+pydantic=2.9.0
+
+# 3. 消息通知与人工接入点 (Human-in-the-loop Webhook)
+slack_sdk=3.37.0
+
+# 4. 向量数据库 (Vector Database)
+# 选择 ChromaDB 作为最易部署的纯本地化方案
+chromadb=1.5.5
+
+# 5. 其他依赖 (Misc)
+python-dotenv=1.0.1
